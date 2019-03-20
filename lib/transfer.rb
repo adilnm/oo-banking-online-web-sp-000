@@ -14,8 +14,8 @@ class Transfer
   end
   
   def execute_transaction
-    send=BankAccount.new(@sender)
-    receive=BankAccount.new(@receiver)
+    send=BankAccount.new(self.sender)
+    receive=BankAccount.new(self.receiver)
     send.deposit(899)
     receive.deposit(50)
   end

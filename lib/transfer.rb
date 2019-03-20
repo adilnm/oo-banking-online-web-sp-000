@@ -8,14 +8,12 @@ class Transfer
   end
   
   def valid?
-    send=BankAccount.new(@sender)
-    receive=BankAccount.new(@receiver)
-    send.valid? && receive.valid?
+    
+    @sender.valid? && @receiver.valid?
   end
   
   def execute_transaction
-    # send=BankAccount.new(@sender)
-    # receive=BankAccount.new(@receiver)
+
     @sender.balance-=@amount
     @receiver.balance+=@amount
   end

@@ -17,6 +17,6 @@ class Transfer
     send=BankAccount.new(@sender)
     receive=BankAccount.new(@receiver)
     send.deposit(@amount)
-    receive.deposit(50)
+    #receive.deposit(50)
   end
 end

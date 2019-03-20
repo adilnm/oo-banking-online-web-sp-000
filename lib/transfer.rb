@@ -7,7 +7,7 @@ class Transfer
     @status="pending"
   end
   
-  def valid?(c)
+  def valid?
     send=BankAccount.new(@sender)
     receive=BankAccount.new(@receiver)
     send.valid? && receive.valid?

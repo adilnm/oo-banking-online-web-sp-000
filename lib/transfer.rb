@@ -8,7 +8,7 @@ class Transfer
   end
   
   def valid?
-    
+    send=B
   end
   
 end

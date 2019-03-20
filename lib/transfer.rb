@@ -8,7 +8,9 @@ class Transfer
   end
   
   def valid?
-    send=B
+    send=BankAccount.new(@sender)
+    receive=BankAccount(@receiver)
+    send.valid? && receive.valid?
   end
   
 end

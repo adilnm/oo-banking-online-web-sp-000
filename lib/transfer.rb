@@ -14,9 +14,9 @@ class Transfer
   end
   
   def execute_transaction
-    send=BankAccount.new(@sender)
-    receive=BankAccount.new(@receiver)
-    send.balance-=@amount
-    receive.balance+=@amount
+    # send=BankAccount.new(@sender)
+    # receive=BankAccount.new(@receiver)
+    @sender.balance-=@amount
+    @receiver.balance+=@amount
   end
 end

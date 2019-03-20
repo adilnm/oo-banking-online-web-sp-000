@@ -13,4 +13,7 @@ class Transfer
     send.valid? && receive.valid?
   end
   
+  def execute_transaction
+    
+  end
 end

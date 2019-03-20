@@ -16,7 +16,7 @@ class Transfer
   def execute_transaction
     send=BankAccount.new(@sender)
     receive=BankAccount.new(@receiver)
-    send.deposit(-50)
-    receive.deposit(50)
+    #send.deposit(-50)
+    receive.deposit(-50)
   end
 end
